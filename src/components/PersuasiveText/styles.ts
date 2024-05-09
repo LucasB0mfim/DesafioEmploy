@@ -19,9 +19,11 @@ export const Title = styled.h1`
   color: #1ea358;
   font-size: 54px;
   margin: 50px 0 24px 0;
+  text-align: center;
 `
 
 export const Phase = styled.p`
   font-size: 24px;
   color: #53a376;
+  text-align: center;
 `

@@ -103,6 +103,13 @@ export const ButtonSkin = styled.a`
     border: 1px solid #1ea358;
     transform: translateY(-8px);
   }
+
+  @media (max-width: 768px) {
+    margin-right: 15px;
+    height: 30px;
+    width: 80px;
+    font-size: 14px;
+  }
 `
 
 export const Teste = styled.div`

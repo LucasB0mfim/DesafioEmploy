@@ -11,9 +11,11 @@ export const Container = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     gap: 25px;
-    bottom: -300%;
+    bottom: -310%;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    padding-bottom: 20px;
   }
 `
