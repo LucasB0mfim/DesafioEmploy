@@ -130,7 +130,7 @@ export const Hamburguer = styled.div`
   display: none;
 
   @media (max-width: 768px) {
-    width: 32px;
+    width: 25px;
     display: block;
     margin-right: 20px;
 
