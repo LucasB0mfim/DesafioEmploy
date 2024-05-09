@@ -106,7 +106,7 @@ export const ButtonSkin = styled.a`
 
   @media (max-width: 768px) {
     margin-right: 15px;
-    height: 30px;
+    height: 35px;
     width: 80px;
     font-size: 14px;
   }
