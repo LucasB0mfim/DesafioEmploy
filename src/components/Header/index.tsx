@@ -7,9 +7,11 @@ import {
   Ul,
   ButtonSkin,
   Teste,
-  TesteTwo
+  TesteTwo,
+  Hamburguer
 } from './styles'
 import employ from '../../assets/images/EmployBackgroundBlack.png'
+import seta from '../../assets/images/Seta.png'
 import { useState } from 'react'
 
 const Header = () => {
@@ -23,10 +25,10 @@ const Header = () => {
           <BoxLeft>
             <img src={employ} alt="Employ" />
             <div onClick={() => setIsProduct(!isProduct)}>
-              Product <span>V</span>
+              Product <img src={seta} className="seta" />
             </div>
             <div onClick={() => setIsLearning(!isLearning)}>
-              Learning Center<span>V</span>
+              Learning Center <img src={seta} className="seta" />
             </div>
 
             <Ul>
@@ -48,6 +50,11 @@ const Header = () => {
             <li>
               <ButtonSkin href="#">Get started</ButtonSkin>
             </li>
+            <Hamburguer>
+              <span></span>
+              <span></span>
+              <span></span>
+            </Hamburguer>
           </BoxRight>
         </Top>
       </Container>

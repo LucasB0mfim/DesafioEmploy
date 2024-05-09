@@ -5,6 +5,7 @@ export const Container = styled.header`
   justify-content: center;
   width: 100%;
   background-color: #2c2c2c;
+  border-bottom: 1px solid #ccc;
 `
 
 export const Top = styled.div`
@@ -37,10 +38,14 @@ export const BoxLeft = styled.div`
     }
 
     span {
-      font-size: 12px;
+      font-size: 14px;
       margin-left: 10px;
-      font-weight: bold;
     }
+  }
+
+  .seta {
+    width: 10px;
+    margin-left: 10px;
   }
 
   > img {
@@ -105,16 +110,13 @@ export const ButtonSkin = styled.a`
   }
 
   @media (max-width: 768px) {
-    margin-right: 15px;
-    height: 35px;
-    width: 80px;
-    font-size: 14px;
+    display: none;
   }
 `
 
 export const Teste = styled.div`
   width: 100%;
-  height: calc(100vh - 65px);
+  height: calc(50vh - 65px);
   background-color: red;
 `
 
@@ -122,4 +124,22 @@ export const TesteTwo = styled.div`
   width: 100%;
   height: calc(50vh - 65px);
   background-color: red;
+`
+
+export const Hamburguer = styled.div`
+  display: none;
+
+  @media (max-width: 768px) {
+    width: 32px;
+    display: block;
+    margin-right: 20px;
+
+    span {
+      height: 2px;
+      display: block;
+      width: 100%;
+      background-color: #f1f1f1;
+      margin-bottom: 4px;
+    }
+  }
 `
