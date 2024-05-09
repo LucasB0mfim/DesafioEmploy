@@ -9,7 +9,6 @@ export const Plan = styled.div`
   position: relative;
   width: 100%;
   height: 500px;
-  // background-color: #d0fdd7;
   background-color: #fff;
   display: flex;
   flex-direction: column;

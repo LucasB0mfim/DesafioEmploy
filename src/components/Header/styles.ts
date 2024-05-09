@@ -28,8 +28,12 @@ export const BoxLeft = styled.div`
     justify-content: center;
     cursor: pointer;
 
+    @media (max-width: 768px) {
+      display: none;
+    }
+
     &:hover {
-      color: #1ea358;
+      color: #d0fdd7;
     }
 
     span {
@@ -41,6 +45,10 @@ export const BoxLeft = styled.div`
 
   > img {
     width: 150px;
+
+    @media (max-width: 768px) {
+      width: 100px;
+    }
   }
 `
 
@@ -63,7 +71,11 @@ export const A = styled.a`
   justify-content: center;
 
   &:hover {
-    color: #1ea358;
+    color: #d0fdd7;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
   }
 `
 
@@ -84,10 +96,12 @@ export const ButtonSkin = styled.a`
   border: 1px solid #fff;
   border-radius: 5px;
   height: 40px;
+  transition: transform 0.3s ease;
 
   &:hover {
-    color: #1ea358;
+    color: #d0fdd7;
     border: 1px solid #1ea358;
+    transform: translateY(-8px);
   }
 `
 

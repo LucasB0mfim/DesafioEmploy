@@ -17,38 +17,40 @@ const Header = () => {
   const [isLearning, setIsLearning] = useState(false)
 
   return (
-    <Container>
-      <Top>
-        <BoxLeft>
-          <img src={employ} alt="Employ" />
-          <div onClick={() => setIsProduct(!isProduct)}>
-            Product <span>V</span>
-          </div>
-          <div onClick={() => setIsLearning(!isLearning)}>
-            Learning Center<span>V</span>
-          </div>
+    <>
+      <Container>
+        <Top>
+          <BoxLeft>
+            <img src={employ} alt="Employ" />
+            <div onClick={() => setIsProduct(!isProduct)}>
+              Product <span>V</span>
+            </div>
+            <div onClick={() => setIsLearning(!isLearning)}>
+              Learning Center<span>V</span>
+            </div>
 
-          <Ul>
+            <Ul>
+              <li>
+                <A href="#">Pricing</A>
+              </li>
+              <li>
+                <A href="#">Watch Demo</A>
+              </li>
+            </Ul>
+          </BoxLeft>
+          <BoxRight>
             <li>
-              <A href="#">Pricing</A>
+              <A href="#">Talk to sales</A>
             </li>
             <li>
-              <A href="#">Watch Demo</A>
+              <ButtonSkin href="#">Login</ButtonSkin>
             </li>
-          </Ul>
-        </BoxLeft>
-        <BoxRight>
-          <li>
-            <A href="#">Talk to sales</A>
-          </li>
-          <li>
-            <ButtonSkin href="#">Login</ButtonSkin>
-          </li>
-          <li>
-            <ButtonSkin href="#">Get started</ButtonSkin>
-          </li>
-        </BoxRight>
-      </Top>
+            <li>
+              <ButtonSkin href="#">Get started</ButtonSkin>
+            </li>
+          </BoxRight>
+        </Top>
+      </Container>
       {isProduct && (
         <Teste>
           <ul>
@@ -73,7 +75,7 @@ const Header = () => {
           </ul>
         </TesteTwo>
       )}
-    </Container>
+    </>
   )
 }
 

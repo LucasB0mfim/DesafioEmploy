@@ -15,7 +15,6 @@ export const Card = styled.div`
 `
 
 export const Title = styled.h3`
-  // color: #d0fdd7;
   color: #fff;
   font-size: 36px;
   font-weight: bold;
@@ -23,15 +22,17 @@ export const Title = styled.h3`
 `
 
 export const Value = styled.p`
-  // color: #d0fdd7;
   color: #fff;
   font-size: 54px;
   font-weight: bold;
   margin-bottom: 20px;
+
+  span {
+    font-size: 16px;
+  }
 `
 
 export const SubTitle = styled.span`
-  // color: #d0fdd7;
   color: #fff;
   font-weight: bold;
   font-size: 14px;
@@ -50,11 +51,15 @@ export const Button = styled.button`
   border-radius: 5px;
   cursor: pointer;
   box-shadow: 2px 2px 15px #146838;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-8px);
+  }
 `
 
 export const Span = styled.span`
   margin-left: 15px;
-  // color: #d0fdd7;
   color: #d4d4d4;
 `
 
@@ -64,4 +69,8 @@ export const BoxSpan = styled.div`
   flex-direction: column;
   justify-content: start;
   margin-bottom: 35px;
+
+  .hidden {
+    visibility: hidden;
+  }
 `
