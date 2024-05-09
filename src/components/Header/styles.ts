@@ -36,11 +36,6 @@ export const BoxLeft = styled.div`
     &:hover {
       color: #d0fdd7;
     }
-
-    span {
-      font-size: 14px;
-      margin-left: 10px;
-    }
   }
 
   .seta {
@@ -112,18 +107,6 @@ export const ButtonSkin = styled.a`
   @media (max-width: 768px) {
     display: none;
   }
-`
-
-export const Teste = styled.div`
-  width: 100%;
-  height: calc(50vh - 65px);
-  background-color: red;
-`
-
-export const TesteTwo = styled.div`
-  width: 100%;
-  height: calc(50vh - 65px);
-  background-color: red;
 `
 
 export const Hamburguer = styled.div`
