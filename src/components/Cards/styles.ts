@@ -60,7 +60,7 @@ export const Button = styled.button`
 
 export const Span = styled.span`
   margin-left: 15px;
-  color: #d4d4d4;
+  color: #f1f1f1;
 `
 
 export const BoxSpan = styled.div`
