@@ -40,10 +40,10 @@ const Header = () => (
             <Link>
               <A href="#">Talk to sales</A>
             </Link>
-            <Link>
+            <Link className="Button">
               <ButtonSkin href="#">Login</ButtonSkin>
             </Link>
-            <Link>
+            <Link className="Button">
               <ButtonSkin href="#">Get started</ButtonSkin>
             </Link>
           </ListLinks>

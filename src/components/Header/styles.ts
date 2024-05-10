@@ -37,6 +37,12 @@ export const ListLinks = styled.ul`
   display: flex;
   align-items: center;
   list-style: none;
+
+  .Button {
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
 `
 
 export const ButtonSkin = styled.a`
@@ -65,18 +71,24 @@ export const ButtonSkin = styled.a`
 export const Hamburguer = styled.div`
   display: none;
 
-  @media (max-width: 1100px) {
-    width: 40px;
+  @media (max-width: 768px) {
+    width: 50px;
     display: block;
     margin-right: 15px;
+  }
 
-    span {
-      height: 2px;
-      display: block;
-      width: 100%;
-      background-color: #f1f1f1;
-      margin-bottom: 4px;
-    }
+  @media (min-width: 768px) and (max-width: 1100px) {
+    width: 30px;
+    display: block;
+    margin-right: 15px;
+  }
+
+  span {
+    height: 2px;
+    display: block;
+    width: 100%;
+    background-color: #f1f1f1;
+    margin-bottom: 4px;
   }
 `
 
