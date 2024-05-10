@@ -8,6 +8,7 @@ export const Container = styled.header`
 `
 
 export const Top = styled.div`
+  color: #fff;
   max-width: 1240px;
   width: 100%;
   height: 65px;
@@ -17,11 +18,10 @@ export const Top = styled.div`
 
 export const A = styled.a`
   color: #fff;
-  text-decoration: none;
-  width: 130px;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 
   &:hover {
     color: #d0fdd7;
@@ -32,21 +32,17 @@ export const A = styled.a`
   }
 `
 
-export const Ul = styled.ul`
+export const ListLinks = styled.ul`
+  width: 100%;
   display: flex;
   align-items: center;
   list-style: none;
-
-  ${A} {
-    width: 135px;
-  }
 `
 
 export const ButtonSkin = styled.a`
   color: #fff;
   text-decoration: none;
   width: 100px;
-  margin-right: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,20 +53,20 @@ export const ButtonSkin = styled.a`
 
   &:hover {
     color: #dfffe4;
-    border: 1px solid: #9bfab0;
+    border: 2px solid #9bfab0;
     transform: translateY(-8px);
   }
 
   @media (max-width: 768px) {
     display: none;
   }
-  `
+`
 
 export const Hamburguer = styled.div`
   display: none;
 
   @media (max-width: 1100px) {
-    width: 25px;
+    width: 40px;
     display: block;
     margin-right: 15px;
 
@@ -84,20 +80,20 @@ export const Hamburguer = styled.div`
   }
 `
 
-export const Links = styled.div`
+export const Link = styled.li`
   display: flex;
+  align-items: center;
+  margin: 0 20px;
+  cursor: pointer;
 
-  div {
-    width: 135px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+  &:hover {
+    color: #dfffe4;
+  }
 
-    &:hover {
-      color: #d0fdd7;
-    }
+  .seta {
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
   }
 
   @media (max-width: 1100px) {
@@ -108,12 +104,6 @@ export const Links = styled.div`
 export const BoxLeft = styled.div`
   display: flex;
   align-items: center;
-  color: #fff;
-
-  .seta {
-    width: 10px;
-    margin-left: 10px;
-  }
 
   > img {
     width: 150px;
@@ -124,13 +114,4 @@ export const BoxRight = styled.div`
   display: flex;
   align-items: center;
   list-style: none;
-
-  li > {
-    width: auto;
-  }
-
-  ${A} {
-    width: auto;
-    margin-right: 30px;
-  }
 `

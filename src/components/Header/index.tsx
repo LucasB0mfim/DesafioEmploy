@@ -4,10 +4,10 @@ import {
   BoxLeft,
   BoxRight,
   A,
-  Ul,
+  ListLinks,
   ButtonSkin,
   Hamburguer,
-  Links
+  Link
 } from './styles'
 
 import employ from '../../assets/images/EmployBackgroundBlack.png'
@@ -19,36 +19,34 @@ const Header = () => (
       <Top>
         <BoxLeft>
           <img src={employ} alt="Employ" />
-          <Links>
-            <div>
-              Product <img src={seta} className="seta" />
-            </div>
-            <div>
-              Learning Center <img src={seta} className="seta" />
-            </div>
-          </Links>
 
-          <Ul>
-            <li>
+          <ListLinks>
+            <Link>
+              Product <img src={seta} className="seta" />
+            </Link>
+            <Link>
+              Learning Center <img src={seta} className="seta" />
+            </Link>
+            <Link>
               <A href="#">Pricing</A>
-            </li>
-            <li>
+            </Link>
+            <Link>
               <A href="#">Watch Demo</A>
-            </li>
-          </Ul>
+            </Link>
+          </ListLinks>
         </BoxLeft>
         <BoxRight>
-          <Ul>
-            <li>
+          <ListLinks>
+            <Link>
               <A href="#">Talk to sales</A>
-            </li>
-            <li>
+            </Link>
+            <Link>
               <ButtonSkin href="#">Login</ButtonSkin>
-            </li>
-            <li>
+            </Link>
+            <Link>
               <ButtonSkin href="#">Get started</ButtonSkin>
-            </li>
-          </Ul>
+            </Link>
+          </ListLinks>
           <Hamburguer>
             <span></span>
             <span></span>
