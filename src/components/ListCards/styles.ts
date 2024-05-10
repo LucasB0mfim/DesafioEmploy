@@ -16,6 +16,12 @@ export const Container = styled.div`
     align-items: center;
   }
 
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+
   @media (min-width: 1680px) {
     gap: 45px;
   }

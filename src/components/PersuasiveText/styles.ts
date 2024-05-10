@@ -20,6 +20,10 @@ export const Container = styled.div`
     );
   }
 
+  @media (min-width: 768px) {
+    height: 200vh;
+  }
+
   @media (min-width: 1680px) {
     height: calc(100vh - 66px);
     display: flex;

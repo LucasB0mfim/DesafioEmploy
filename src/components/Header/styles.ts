@@ -15,42 +15,6 @@ export const Top = styled.div`
   justify-content: space-between;
 `
 
-export const BoxLeft = styled.div`
-  display: flex;
-  align-items: center;
-  color: #fff;
-
-  div {
-    width: 135px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-
-    @media (max-width: 768px) {
-      display: none;
-    }
-
-    &:hover {
-      color: #d0fdd7;
-    }
-  }
-
-  .seta {
-    width: 10px;
-    margin-left: 10px;
-  }
-
-  > img {
-    width: 150px;
-
-    @media (max-width: 768px) {
-      width: 100px;
-    }
-  }
-`
-
 export const A = styled.a`
   color: #fff;
   text-decoration: none;
@@ -63,23 +27,8 @@ export const A = styled.a`
     color: #d0fdd7;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1100px) {
     display: none;
-  }
-`
-
-export const BoxRight = styled.ul`
-  display: flex;
-  align-items: center;
-  list-style: none;
-
-  li > {
-    width: auto;
-  }
-
-  ${A} {
-    width: auto;
-    margin-right: 30px;
   }
 `
 
@@ -115,12 +64,12 @@ export const ButtonSkin = styled.a`
   @media (max-width: 768px) {
     display: none;
   }
-`
+  `
 
 export const Hamburguer = styled.div`
   display: none;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1100px) {
     width: 25px;
     display: block;
     margin-right: 15px;
@@ -132,5 +81,56 @@ export const Hamburguer = styled.div`
       background-color: #f1f1f1;
       margin-bottom: 4px;
     }
+  }
+`
+
+export const Links = styled.div`
+  display: flex;
+
+  div {
+    width: 135px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover {
+      color: #d0fdd7;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    display: none;
+  }
+`
+
+export const BoxLeft = styled.div`
+  display: flex;
+  align-items: center;
+  color: #fff;
+
+  .seta {
+    width: 10px;
+    margin-left: 10px;
+  }
+
+  > img {
+    width: 150px;
+  }
+`
+
+export const BoxRight = styled.div`
+  display: flex;
+  align-items: center;
+  list-style: none;
+
+  li > {
+    width: auto;
+  }
+
+  ${A} {
+    width: auto;
+    margin-right: 30px;
   }
 `
