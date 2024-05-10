@@ -11,7 +11,7 @@ export const Container = styled.div`
   );
 
   @media (max-width: 768px) {
-    height: 260vh;
+    height: 270vh;
     background: rgb(255, 255, 255);
     background: linear-gradient(
       180deg,
