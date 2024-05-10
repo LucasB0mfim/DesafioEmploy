@@ -12,6 +12,12 @@ export const Container = styled.div`
 
   @media (max-width: 768px) {
     height: 260vh;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(218, 253, 226, 1) 100%
+    );
   }
 
   @media (min-width: 1680px) {
