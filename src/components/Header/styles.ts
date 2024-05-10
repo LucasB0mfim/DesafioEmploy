@@ -4,8 +4,7 @@ export const Container = styled.header`
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: #2c2c2c;
-  border-bottom: 1px solid #ccc;
+  background-color: #1ea358;
 `
 
 export const Top = styled.div`
@@ -52,16 +51,6 @@ export const BoxLeft = styled.div`
   }
 `
 
-export const BoxRight = styled.ul`
-  display: flex;
-  align-items: center;
-  list-style: none;
-
-  li > {
-    width: 130px;
-  }
-`
-
 export const A = styled.a`
   color: #fff;
   text-decoration: none;
@@ -79,10 +68,29 @@ export const A = styled.a`
   }
 `
 
+export const BoxRight = styled.ul`
+  display: flex;
+  align-items: center;
+  list-style: none;
+
+  li > {
+    width: auto;
+  }
+
+  ${A} {
+    width: auto;
+    margin-right: 30px;
+  }
+`
+
 export const Ul = styled.ul`
   display: flex;
   align-items: center;
   list-style: none;
+
+  ${A} {
+    width: 135px;
+  }
 `
 
 export const ButtonSkin = styled.a`
@@ -99,8 +107,8 @@ export const ButtonSkin = styled.a`
   transition: transform 0.3s ease;
 
   &:hover {
-    color: #d0fdd7;
-    border: 1px solid #1ea358;
+    color: #dfffe4;
+    border: 1px solid: #9bfab0;
     transform: translateY(-8px);
   }
 
