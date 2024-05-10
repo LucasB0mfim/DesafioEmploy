@@ -1,11 +1,10 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  width: 100%;
+  width: auto;
   gap: 24px;
   display: flex;
   justify-content: center;
-  position: absolute;
   bottom: -30%;
 
   @media (max-width: 768px) {
@@ -15,6 +14,9 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
+  }
+
+  @media (min-width: 1680px) {
+    gap: 45px;
   }
 `

@@ -1,5 +1,6 @@
 import { Container, Plan, Title, Phase } from './styles'
 import ListCards from '../ListCards'
+
 const PersuasiveText = () => (
   <Container>
     <Plan>
